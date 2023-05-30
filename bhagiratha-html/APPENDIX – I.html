@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        .header-bill-top span {
+            font-size: 15px;
+            color: #000;
+            font-weight: 500;
+            margin-left: 7px;
+        }
+        .white-box-bill-bg{
+            background: #fff;
+            border-radius: 3px;
+            border: 1px solid #D6DADF;
+        }
+        .top-form-wp-bill{
+            max-width:700px;
+        }
+
+
+        .input-wp-bill-box{
+            margin-bottom: 0px;
+            padding-bottom: 15px;
+        }
+
+        .input-wp-bill-box  .chosen-container-single .chosen-single div b {
+            background: url(https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen-sprite.png) no-repeat 0px 5px;
+        }
+        .flex-col-bill-box h4{
+            font-size: 14px;
+            margin: 0;
+            color: #000;
+        }
+
+        .flex-col-bill-box p{
+            font-size: 13px;
+            color: #3B3B3B;
+            font-weight: 500;
+            margin: 0;
+        }
+        .flex-col-bill-box span{
+            color: #6A6C6E;
+        }
+
+        input:focus{
+            outline: none !important;
+        }
+        .tbl-wp-bill-box .table>tbody>tr>td, .tbl-wp-bill-box .table>tbody>tr>th{
+            padding: 3px 5px;
+            vertical-align: middle;
+            border-color: #C3C9CF;
+        }
+        .tbl-wp-bill-box .table{
+            font-size: 12px;
+            background: #f2f7fc;
+            margin-bottom: 0;
+        }
+
+        .tbl-wp-bill-box .table>tbody>tr>th{
+            background: #F2F7FC;
+            color: #3B3B3B;
+            font-weight: 600;
+        }
+        .tbl-wp-bill-box .table>tbody>tr>td{
+            color: #6A6C6E;
+        }
+
+        .file-data span{
+            max-width: calc(100% - 29px);
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            text-overflow: ellipsis;
+        }
+
+        .top-tttt span{
+            margin-left: 10px;
+        }
+        .m-t-15{
+            margin-top: 15px !important;
+        }
+        .popover-content li{
+            list-style: none;
+            line-height: 25px;
+            border-bottom: 1px solid #D6DADF;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .popover-content li:last-child {
+            border: none;
+        }
+        .popover-content li b{
+            color: #000;
+            line-height: 1.4;
+            padding: 2px 0;
+            padding-right: 8px;
+            font-weight: 500;
+        }
+        .popover-content li span{
+            color: #005BAF;
+            font-weight: 600;
+        }
+        .radio-inline span{
+            line-height: 1.4;
+        }
+        .radio-inline input{
+            position: inherit !important;
+            margin: 0;
+            margin-right: 5px;
+            margin-left: 0 !important;
+        }
+        .tb-fm-grp .control-label {
+            padding-top: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #000;
+            text-align: left;
+        }
+        .tb-fm-grp .form-control {
+            border: 1px solid #D6DADF;
+            font-size: 13px;
+            height: 30px;
+            border-radius: 3px;
+            box-shadow: none;
+            line-height: 30px;
+        }
+        .top-form-wp-bill{
+            max-width:1000px;
+        }
+
+        .print-tb-top{
+            text-align: center;
+            margin: 20px 0;
+        }
+        p {
+            margin-bottom: 5px;
+            font-size: 13px;
+            line-height: 1.4;
+            color: #333;
+        }
+        .gr-p-md input {
+            border: 1px solid #d4d4d4;
+            font-size: 13px;
+            height: 20px;
+            font-size: 13px;
+            height: 20px;
+            border-radius: 3px;
+            box-shadow: none;
+            line-height: 20px;
+            width: 90px;
+            margin: 0 10px 0 3px;
+        }
+        .print-tb-top img{
+            width: 70px;
+        }
+        .top-form-wp-bill h4{
+            margin-bottom: 0;
+            font-size: 17px;
+            font-weight: 800;
+        }
+        .top-form-wp-bill h6 {
+            font-size: 14px;
+            margin-top: 5px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+        .prn-box-hr-in{
+            padding: 15px 0px;
+            border: 1px solid #cecece;
+            border-radius: 5px;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .prn-box-hr-in p{
+            margin: 0;
+        }
+        .brek-col-print{
+            margin: 3px 0;
+        }
+        .top-form-wp-bill h4.op-tt-prt{
+            color: #005baf;
+            font-size: 14px;
+            margin-bottom: -2px;
+            font-weight: 500;
+            margin-top: 0;
+        }
+    </style>
+
+
+</head>
+<body style="background: #e2e2e2; padding: 20px;">
+<div class="contentmain" style="background: #F2F2F2; padding: 15px; border-radius: 8px; font-family: 'Roboto', sans-serif;">
+
+
+
+    <!---------------------------------
+          Cut HTML from Here
+    ----------------------------------->
+
+
+
+
+
+    <div class="top-form-wp-bill">
+
+
+        <div class="white-box-bill-bg input-wp-bill-box">
+
+            <div class="print-tb-top">
+                <img src="images/print/Government_of_Telangana_Logo.png" alt="">
+                <h4>APPENDIX – I</h4>
+                <h6>Statement of fixation of Pay under Telangana Revised Scales of Pay Rules,<br>
+                    2020(Circular Memo No.755A/33/A1/HRM.IV/ 2021, dated:17.06.2021)</h6>
+            </div>
+
+            <div class="container-fluid">
+
+                <div class="row" style="margin-top: 0px">
+                    <div class="col-md-12">
+                        <div class="alert alert-warning">
+                            <strong>Note:</strong> <br>
+                           <ul style="padding: 0; padding-left: 19px;">
+                               <li>Separate statement should be prepared for fixation of
+                                   pay in respect of substantive and officiating post. </li>
+                               <li>
+                                   In respect of employees holding Special Grade /
+                                   Special Promotion Post Special Ad-hoc Promotion
+                                   Post, fixation shall be in the corresponding relevant
+                                   Revised Scales assigned to the post</li>
+                           </ul>
+                        </div>
+
+                        <div class="row tbl-wp-bill-box">
+                            <div class="col-md-12">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <th style="width: 50px;" class="text-center">S No.</th>
+                                        <th>Name of the employee</th>
+                                        <th class="text-center" colspan="2">Amounts in Rupees</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>Designation of the post in which pay is to be fixed (the
+                                            actual nomenclature of the post i.e., Ordinary / Special
+                                            Grade / SPP-I A& IB/ SAPP-IA & IB/SPP-II/SAPP-II held
+                                            by the employees is to be only mentioned)
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td> a) Whether the employee has opted to the Revised Pay
+                                            Scales, 2020.<br>
+                                            b) Date on which option was exercised <br>
+                                            c) Date from which option was exercised to come over to
+                                            the Revised Pay Scales, 2</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td>Designation of the post in which pay is to be fixed (the
+                                            actual nomenclature of the post i.e., Ordinary / Special
+                                            Grade / SPP-I A& IB/ SAPP-IA & IB/SPP-II/SAPP-II held
+                                            by the employees is to be only mentioned)
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td> a) Whether the employee has opted to the Revised Pay
+                                            Scales, 2020.<br>
+                                            b) Date on which option was exercised <br>
+                                            c) Date from which option was exercised to come over to
+                                            the Revised Pay Scales, 2</td>
+                                       <td class="text-center"> In the
+                                           existing Pay
+                                           Scales, 2015 <br>
+                                           <b>‘X’</b></td>
+                                        <td class="text-center">
+                                            In the
+                                            Revised Pay
+                                            Scales, 2020 <br>
+                                            <b>‘Y‘</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">5</td>
+                                        <td>Designation of the post in which pay is to be fixed (the
+                                            actual nomenclature of the post i.e., Ordinary / Special
+                                            Grade / SPP-I A& IB/ SAPP-IA & IB/SPP-II/SAPP-II held
+                                            by the employees is to be only mentioned)
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">6</td>
+                                        <td> a) Whether the employee has opted to the Revised Pay
+                                            Scales, 2020.<br>
+                                            b) Date on which option was exercised <br>
+                                            c) Date from which option was exercised to come over to
+                                            the Revised Pay Scales, 2</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>Designation of the post in which pay is to be fixed (the
+                                            actual nomenclature of the post i.e., Ordinary / Special
+                                            Grade / SPP-I A& IB/ SAPP-IA & IB/SPP-II/SAPP-II held
+                                            by the employees is to be only mentioned)
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td> a) Whether the employee has opted to the Revised Pay
+                                            Scales, 2020.<br>
+                                            b) Date on which option was exercised <br>
+                                            c) Date from which option was exercised to come over to
+                                            the Revised Pay Scales, 2</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td>Designation of the post in which pay is to be fixed (the
+                                            actual nomenclature of the post i.e., Ordinary / Special
+                                            Grade / SPP-I A& IB/ SAPP-IA & IB/SPP-II/SAPP-II held
+                                            by the employees is to be only mentioned)
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">4</td>
+                                        <td> a) Whether the employee has opted to the Revised Pay
+                                            Scales, 2020.<br>
+                                            b) Date on which option was exercised <br>
+                                            c) Date from which option was exercised to come over to
+                                            the Revised Pay Scales, 2</td>
+                                        <td class="text-center"> In the
+                                            existing Pay
+                                            Scales, 2015 <br>
+                                            <b>‘X’</b></td>
+                                        <td class="text-center">
+                                            In the
+                                            Revised Pay
+                                            Scales, 2020 <br>
+                                            <b>‘Y‘</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       <td colspan="2"> Station :</td>
+                                        <td colspan="2" rowspan="2" style="padding-top: 40px; text-align: center;">Signature of the Head of
+                                            the Office/Drawing and
+                                            Disbursing Officer</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Date :</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <div style="margin-top: 20px; font-size: 15px; font-weight: 500;">
+                                    <i style="margin-bottom: 7px; display: inline-block;">*Shall not be reckoned as pay for purpose of calculation of Dearness Allowance,
+                                        House Rent Allowanceand City Compensatory Allowance</i>
+                                    <p style="font-size: 15px; font-weight: 500;">#Telangana Increment (Telangana Special Pay) as per para 9 of G.O.Ms.No.23,
+                                        Finance (HRM.III) Dept.,dt.13-08-2014, is a fixed amount and it shall not be
+                                        revised.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---------------------------------
+          End HTML from Here
+     ---------------------------------->
+
+
+
+
+
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/f09316860b.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    $(".chosen-select").chosen({max_selected_options: 5})
+</script>
+</body>
+</html>

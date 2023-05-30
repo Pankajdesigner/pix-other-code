@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        .header-bill-top span {
+            font-size: 15px;
+            font-weight: 500;
+            margin-left: 7px;
+        }
+        .white-box-bill-bg{
+            border-radius: 3px;
+            border: 1px solid #000;
+        }
+        .top-form-wp-bill{
+            max-width:700px;
+        }
+        .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+            border: 1px solid #000;
+            color: #000;
+        }
+
+        .input-wp-bill-box{
+            margin-bottom: 0px;
+            padding-bottom: 15px;
+        }
+
+        .flex-col-bill-box h4{
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .flex-col-bill-box p{
+            font-size: 13px;
+            font-weight: 500;
+            margin: 0;
+        }
+        .flex-col-bill-box span{
+        }
+
+        input:focus{
+            outline: none !important;
+        }
+        .tbl-wp-bill-box .table>tbody>tr>td, .tbl-wp-bill-box .table>tbody>tr>th{
+            padding: 3px 5px;
+            vertical-align: middle;
+        }
+        .tbl-wp-bill-box .table{
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+
+        .tbl-wp-bill-box .table>tbody>tr>th{
+            font-weight: 600;
+        }
+        .tbl-wp-bill-box .table>tbody>tr>td{
+        }
+        .alert-warning {
+            color: #000000;
+            background-color: transparent;
+            border-color: #000000;
+        }
+
+        .file-data span{
+            max-width: calc(100% - 29px);
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            text-overflow: ellipsis;
+        }
+
+        .top-tttt span{
+            margin-left: 10px;
+        }
+        .m-t-15{
+            margin-top: 15px !important;
+        }
+        .popover-content li{
+            list-style: none;
+            line-height: 25px;
+            border-bottom: 1px solid #D6DADF;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .popover-content li:last-child {
+            border: none;
+        }
+        .popover-content li b{
+            line-height: 1.4;
+            padding: 2px 0;
+            padding-right: 8px;
+            font-weight: 500;
+        }
+        .popover-content li span{
+            font-weight: 600;
+        }
+        .radio-inline span{
+            line-height: 1.4;
+        }
+        .radio-inline input{
+            position: inherit !important;
+            margin: 0;
+            margin-right: 5px;
+            margin-left: 0 !important;
+        }
+        .tb-fm-grp .control-label {
+            padding-top: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .tb-fm-grp .form-control {
+            border: 1px solid #D6DADF;
+            font-size: 13px;
+            height: 30px;
+            border-radius: 3px;
+            box-shadow: none;
+            line-height: 30px;
+        }
+        .top-form-wp-bill{
+            max-width:1000px;
+        }
+
+        .print-tb-top{
+            text-align: center;
+            margin: 20px 0;
+        }
+        p {
+            margin-bottom: 5px;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        .gr-p-md input {
+            border: 1px solid #000;
+            font-size: 13px;
+            height: 20px;
+            font-size: 13px;
+            height: 20px;
+            border-radius: 3px;
+            box-shadow: none;
+            line-height: 20px;
+            width: 90px;
+            margin: 0 10px 0 3px;
+        }
+        .print-tb-top img{
+            width: 70px;
+        }
+        .top-form-wp-bill h4{
+            margin-bottom: 0;
+            font-size: 17px;
+            font-weight: 800;
+        }
+        .top-form-wp-bill h6 {
+            font-size: 14px;
+            margin-top: 5px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        p{
+            margin-bottom: 5px;
+        }
+        .prn-box-hr-in{
+            padding: 15px 0px;
+            border: 1px solid #cecece;
+            border-radius: 5px;
+            margin: 0;
+            margin-top: 10px;
+        }
+        .prn-box-hr-in p{
+            margin: 0;
+        }
+        .brek-col-print{
+            margin: 3px 0;
+        }
+        .top-form-wp-bill h4.op-tt-prt{
+            font-size: 14px;
+            margin-bottom: -2px;
+            font-weight: 500;
+            margin-top: 0;
+        }
+    </style>
+
+
+</head>
+<body style="padding: 20px;">
+<div class="contentmain" style="max-width: 1000px; margin: 0 auto;padding: 15px; border-radius: 8px; font-family: 'Roboto', sans-serif;">
+
+
+
+    <!---------------------------------
+          Cut HTML from Here
+    ----------------------------------->
+
+
+
+
+
+    <div class="top-form-wp-bill">
+
+
+        <div class="white-box-bill-bg input-wp-bill-box">
+
+            <div class="print-tb-top">
+                <h4>APPENDIX – I</h4>
+                <h6>Statement of Fixation of Pay under Telangana Revised Scales of Pay Rules, <br>
+                    2020(Circular Memo No.755A/33/A1/HRM.IV/ 2021, dated:17.06.2021)
+                </h6>
+            </div>
+
+            <div class="container-fluid">
+
+                <div class="row" style="margin-top: 0px">
+                    <div class="col-md-12">
+                        <div class="alert alert-warning">
+                            <strong>Note:</strong> <br>
+                           <ul style="padding: 0; padding-left: 19px;">
+                               <li>Separate statement should be prepared for fixation of pay in respect of substantive and officiating post.</li>
+                               <li>
+                                   In respect of employees holding Special Grade / Special Promotion Post Special Ad-hoc Promotion Post, fixation shall be in the corresponding relevant Revised Scales assigned to the post
+                               </li>
+                           </ul>
+                        </div>
+
+                        <div class="row tbl-wp-bill-box">
+                            <div class="col-md-12">
+                                <div class="text-right">
+                                    <b style="font-size: 13px; margin-bottom: 6px; display: inline-block;">(Amounts in Rupees)</b>
+                                </div>
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <td style="width: 50px;" class="text-center">1</td>
+                                        <td>Name of the employee</td>
+                                        <td class="" colspan="2">SAROJA KURENDA</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">2</td>
+                                        <td>Designation of the post in which pay is to be fixed (the
+                                            actual nomenclature of the post i.e., Ordinary / Special
+                                            Grade / SPP-I A& IB/ SAPP-IA & IB/SPP-II/SAPP-II held
+                                            by the employees is to be only mentioned)
+                                        </td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">3</td>
+                                        <td> Whether substantive or officiating<br>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" rowspan="3">4</td>
+                                        <td>a) Whether the employee has opted to the Revised Pay Scales, 2020.</td>
+                                        <td colspan="2">Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>b) Date on which option was exercised.</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>c) Date from which option was exercised to come over to the Revised Pay Scales, 2020 from 01.07.2018, the date of next increment.</td>
+                                        <td colspan="2">09-12-2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" rowspan="3">5</td>
+                                        <td> a) Existing Scale of Pay of the post on the date of entry into the Revised Pay Scales, 2020.</td>
+                                        <td colspan="2">
+                                            87130-2160-91450-2330-100770-2520-110850
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>b) Pay in the existing Scale (i.e. in RPS, 2015).</td>
+                                        <td colspan="2">1,13,370.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>c) Special Pay, if any in the existing Scale (i.e. in RPS, 2015)</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" rowspan="3">6</td>
+                                        <td>	Existing emoluments on the date of entry into RPS, 2020.
+                                            a) Basic Pay i.e., pay as defined in Fundamental Rule9(21)(a)(i) including stagnation increments / Pay as per 5 (b) above</td>
+                                        <td colspan="2">
+                                            1,13,370.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>b) Personal Pay under Rule 9 (23) (a) of the Fundamental Rules orRules or Rule 7 (40) (a) of the Hyderabad Civil Service Regulations</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>c) Dearness Allowance admissible at the rate which existed on 1st July, 2018 appropriate to ‘Basic Pay’ referred to at sub-item (a) above Total 6 (a to c)</td>
+                                        <td colspan="2">34,455.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right" colspan="2">Total 6 (a to c)</td>
+                                        <td colspan="2">1,13,370.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">7</td>
+                                        <td>Fitment benefit 30% of Basic Pay referred to in item 6 (a)</td>
+                                        <td colspan="2">34,011.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">8</td>
+                                        <td>Total of items 6 and 7</td>
+                                        <td colspan="2">1,13,370.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">9</td>
+                                        <td> Revised Scale of Pay, 2020 for the post in which the Pay is fixed now.</td>
+                                        <td colspan="2">19000-640-20920-660-22900-690- 24970-720-27130-750-29380-830- 31870-940-34690-1030-37780-1110- 41110-1190-44680-1280-48520-1400- 52720-1500-57220-1630-58850</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">10</td>
+                                        <td>Revised Pay as fixed in the Revised Scale at the stage next above the amount referred to in item 8 above irrespective whether, the amount isa stage or not, in the Revised Scale</td>
+                                        <td colspan="2">67,300.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">11</td>
+                                        <td>Increase in emoluments</td>
+                                        <td class="text-center"> In the
+                                            existing Pay
+                                            Scales, 2015 <br>
+                                            <b>‘X’</b></td>
+                                        <td class="text-center">
+                                            In the
+                                            Revised Pay
+                                            Scales, 2020 <br>
+                                            <b>‘Y‘</b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">i)</td>
+                                        <td>Basic Pay</td>
+                                        <td class="text-center">1,13,370.00	</td>
+                                        <td class="text-center">67,300.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">ii)</td>
+                                        <td>Special Pay*</td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">iii)</td>
+                                        <td>Personal Pay* (under FR/RSPR, 2020)</td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">iv)</td>
+                                        <td>Family Planning Increment*</td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">v)</td>
+                                        <td>Advance increment*</td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">vi)</td>
+                                        <td>Dearness Allowance</td>
+                                        <td class="text-center">34,455.00</td>
+                                        <td class="text-center">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">vii)</td>
+                                        <td>House Rent Allowance</td>
+                                        <td class="text-center">15,000.00	</td>
+                                        <td class="text-center">8749.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">viii)</td>
+                                        <td>City Compensatory Allowance</td>
+                                        <td class="text-center">0.00</td>
+                                        <td class="text-center">0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">x)</td>
+                                        <td>Telangana Increment (Telangana Special Pay)#</td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center">(Same as in the Column ‘X’)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right" colspan="2">Total (Rs.):</td>
+                                        <td class="text-center">1,13,370.00</td>
+                                        <td class="text-center">67,300.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right" colspan="2">Net Increase Y – X:</td>
+                                        <td class="text-center">-,46,070.00</td>
+                                        <td class="text-center"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="text-center" rowspan="3">12</td>
+                                        <td>a) The amount of pay fixed in the Revised Pay Scales, 2020 in the lower / substantive post</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>b) The amount of pay fixed in Revised Pay Scales, 2020 (vide item 10 above)</td>
+                                        <td colspan="2">67,300.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>c) The pay fixed in the Revised Pay Scales, 2020 in officiating post as per Rule 6 (g) (i) of the Telangana Revised Scales of Pay Rules, 2020 in case where the Pay in item 12(b) is equal or less than Pay in item 12 (a) above (i.e., next stage to the amount of the substantive pay as per item 12 (a) above)</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">13</td>
+                                        <td>Date of next increment</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">14</td>
+                                        <td>Any other relevant information</td>
+                                        <td colspan="2"></td>
+                                    </tr>
+
+                                    <tr>
+                                       <td colspan="2"> Station :</td>
+                                        <td colspan="2" rowspan="2" style="padding-top: 40px; text-align: center;">Signature of the Head of
+                                            the Office/Drawing and
+                                            Disbursing Officer</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">Date :</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                                <div style="margin-top: 20px; font-size: 13px; font-weight: 500;">
+                                    <i style="margin-bottom: 7px; display: inline-block;">*Shall not be reckoned as pay for purpose of calculation of Dearness Allowance,
+                                        House Rent Allowanceand City Compensatory Allowance</i>
+                                    <p style="font-size: 13px; font-weight: 500;">#Telangana Increment (Telangana Special Pay) as per para 9 of G.O.Ms.No.23,
+                                        Finance (HRM.III) Dept.,dt.13-08-2014, is a fixed amount and it shall not be
+                                        revised.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---------------------------------
+          End HTML from Here
+     ---------------------------------->
+
+
+
+
+
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/f09316860b.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    $(".chosen-select").chosen({max_selected_options: 5})
+</script>
+</body>
+</html>

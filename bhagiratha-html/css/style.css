@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.contentmain{
+    background: #F2F2F2;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-bill-top {
+    background: #fff;
+    border-radius: 3px;
+    padding: 10px 10px;
+    border: 1px solid #D6DADF;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.colp-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-bill-top span {
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+    margin-left: 7px;
+}
+.white-box-bill-bg{
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #D6DADF;
+}
+.top-form-wp-bill{
+    max-width:700px;
+}
+.rd-wp-bill{
+    padding: 10px 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+}
+.rd-wp-bill .checkbox-inline, .rd-wp-bill .radio-inline{
+    font-weight: 500;
+    margin-left: 20px;
+}
+.rd-wp-bill .checkbox-inline, .rd-wp-bill .radio-inline:first-child{
+    margin-left: 0px;
+}
+.rd-wp-bill .checkbox input[type=checkbox], .rd-wp-bill .checkbox-inline input[type=checkbox], .rd-wp-bill .radio input[type=radio], .rd-wp-bill .radio-inline input[type=radio]{
+    top: -1px;
+    margin-left: -18px;
+}
+.input-wp-bill-box{
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+.form-bill-header-dark-bg{
+    background: #1B364D;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+.input-wp-bill-box .form-control{
+    border: 1px solid #D6DADF;
+    font-size: 13px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: none;
+    line-height: 30px;
+}
+.input-wp-bill-box .form-horizontal .control-label {
+    padding-top: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+}
+.chosen-container {
+    width: 100% !important;
+}
+.input-wp-bill-box  .chosen-container-single .chosen-single {
+    background: #fff !important;
+    padding: 0 0 0 12px;
+    height: 30px;
+    line-height: 26px;
+    color: #676767;
+    box-shadow: none;
+    border-radius: 2px;
+    border: 1px solid #d4d4d4;
+    border: 1px solid #D6DADF;
+    font-size: 13px;
+    height: 30px;
+    border-radius: 3px;
+    line-height: 30px;
+}
+.input-wp-bill-box  .chosen-container-single .chosen-single div b {
+    background: url(https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen-sprite.png) no-repeat 0px 5px;
+}
+
+.form-horizontal .form-control-rd .radio-inline {
+    padding-top: 0px;
+    font-size: 13px;
+}
+.form-control-rd{
+    height: 30px;
+    padding: 4px 12px;
+}
+.form-control-rd .radio-inline input[type=radio]{
+    top: -2px;
+}
+.btn-green-bill{
+    background: #00944d;
+    color: #fff;
+    border-radius: 3px;
+    border:none;
+    height: 30px;
+    line-height: 30px;
+    font-size:13px;
+    padding: 0 15px;
+}
+.input-wp-bill-box .form-group {
+    margin-bottom: 11px;
+}
+.close-tb-emp{
+    cursor: pointer;
+}
+.top-emp-wp-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.dt-emp-leftside {
+    display: flex;
+    align-items: center;
+}
+
+.flex-col-bill-box{
+    margin-right: 15px;
+}
+.flex-col-bill-box h4{
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+}
+
+.flex-col-bill-box p{
+    font-size: 13px;
+    color: #3B3B3B;
+    font-weight: 500;
+    margin: 0;
+}
+.flex-col-bill-box span{
+    color: #6A6C6E;
+}
+.date-tb-bill{
+    border: none;
+    width: 80px;
+    background: url(../images/drop-tb.svg) no-repeat;
+    background-position: right center;
+    cursor: pointer;
+}
+.date-tb-bill:focus{
+    outline: none;
+}
+.num-input-bill-tb{
+    height: 25px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #d4d4d4;
+}
+input:focus{
+    outline: none !important;
+}
+.tb-bill-box-wp{
+    margin-bottom: 20px;
+}
+.tbl-wp-bill-box .table>tbody>tr>td, .tbl-wp-bill-box .table>tbody>tr>th{
+    padding: 5px 6px;
+    vertical-align: middle;
+    border-color: #C3C9CF;
+}
+.tbl-wp-bill-box .table{
+    font-size: 12px;
+    background: #f2f7fc;
+    margin-bottom: 0;
+}
+button.btn-green-bill.btn-tb-red{
+    height: 25px;
+    line-height: 25px;
+    padding: 0 8px;
+    background: #ED5757;
+}
+.tbl-wp-bill-box .table>tbody>tr>th{
+    background: #F2F7FC;
+    color: #3B3B3B;
+    font-weight: 600;
+}
+.tbl-wp-bill-box .table>tbody>tr>td{
+    color: #6A6C6E;
+}
+.tb-inner-row{
+    display: flex;
+}
+.col-tb-1{
+    width: 80%;
+}
+.col-tb-2{
+    width: 20%;
+    text-align: right;
+}
+.file-data{
+    background: #e8e8e8;
+    padding: 0px 14px;
+    margin-top: 8px;
+    border-radius: 22px;
+    font-size: 12px;
+    line-height: 30px;
+    cursor: pointer;
+    height: 30px;
+    padding-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.file-data span{
+    max-width: calc(100% - 29px);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+}
+.top-tttt{
+    background: #fff;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DDE0E2;
+}
+.m-b-10{
+    margin-bottom: 10px !important;
+}
+.top-tttt span{
+    margin-left: 10px;
+}
+.m-b-15{
+    margin-bottom: 15px !important;
+}
+.m-b-5{
+    margin-bottom: 5px !important;
+}
+.m-t-15{
+    margin-top: 15px !important;
+}
+.m-t-10{
+    margin-top: 10px !important;
+}
+.m-t-5{
+    margin-top: 5px !important;
+}
+.pd-left-0{
+    padding-left: 0px !important;
+}
+.pd-right-0{
+    padding-right: 0px !important;
+}
+.top-tttt-blue{
+    background: #CDE5FE;
+    color: #005BAF;
+    font-weight: 500;
+    font-size: 14px;
+}
+.data-fm{
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #565656;
+}
+.data-fm-lbl{
+    height: 20px;
+    padding: 0 15px !important;
+    line-height: 20px;
+}
+.bl-break{
+    padding-top: 0px !important;
+    line-height: 1.2;
+}
+.lp-sp{
+    font-size: 15px !important;
+    margin-bottom: 13px !important;
+    margin-top: 10px;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 5px;
+}
+.input-upload-fm{
+    line-height: 0 !important;
+    padding: 4px 6px;
+}
+.btn-green-bill.blue{
+    background: #005BAF;
+    transition: 0.5s;
+}
+.popover-content{
+    border: none;
+    box-shadow: none;
+    padding: 5px 10px;
+}
+.popover-content li{
+    list-style: none;
+    line-height: 25px;
+    border-bottom: 1px solid #D6DADF;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popover-content li:last-child {
+    border: none;
+}
+.pointer{
+    cursor: pointer;
+}
+.popover-content li b{
+    color: #000;
+    line-height: 1.4;
+    padding: 2px 0;
+    padding-right: 8px;
+    font-weight: 500;
+}
+.popover-content li span{
+    color: #005BAF;
+    font-weight: 600;
+}
+.btn-green-bill.blue:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-green-bill.blue:focus{
+    background: #084882;
+    outline: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-green-bill:focus{
+    background: #037D42;
+    outline: none;
+    color: #fff;
+    transition: 0.5s;
+}
+.btn-green-bill:hover{
+    color: #fff;
+}
+.radio-inline{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 7px;
+    margin-left: 0 !important;
+    padding: 0;
+}
+.radio-inline span{
+    line-height: 1.4;
+}
+.radio-inline input{
+    position: inherit !important;
+    margin: 0;
+    margin-right: 5px;
+    margin-left: 0 !important;
+}
+.m-b-20{
+    margin-bottom: 20px;
+}
+
+.tb-fm-grp .control-label {
+    padding-top: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+}
+.tb-fm-grp .form-control {
+    border: 1px solid #D6DADF;
+    font-size: 13px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: none;
+    line-height: 30px;
+}
+.tb-fm-grp{
+    margin-bottom: 10px;
+}
+
+
+
+.top-form-wp-bill{
+    max-width:1000px;
+}
+
+.print-tb-top{
+    text-align: center;
+    margin: 20px 0;
+}
+p {
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333;
+}
+.gr-p-md input {
+    border: 1px solid #d4d4d4;
+    font-size: 13px;
+    height: 20px;
+    font-size: 13px;
+    height: 20px;
+    border-radius: 3px;
+    box-shadow: none;
+    line-height: 20px;
+    width: 90px;
+    margin: 0 10px 0 3px;
+}
+.print-tb-top img{
+    width: 70px;
+}
+.top-form-wp-bill h4{
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 800;
+}
+.control-label {
+    padding-top: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+}
+.top-form-wp-bill h6 {
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+p{
+    margin-bottom: 5px;
+}
+.btn-green-bill.red{
+    background: #fd4949;
+}
+
+.prn-box-hr{
+    padding: 20px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.y-print-p{
+    font-size: 13px;
+    text-align: center;
+    background: #ffc107;
+    display: inline-block;
+    padding: 3px 11px;
+    height: 25px;
+    line-height: 21px;
+    border-radius: 2px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 500;
+}
+.prn-box-hr-in{
+    padding: 15px 0px;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    margin: 0;
+    margin-top: 10px;
+}
+.prn-box-hr-in p{
+    margin: 0;
+}
+.brek-col-print{
+    margin: 5px 0;
+}
+.top-form-wp-bill h4.op-tt-prt{
+    color: #005baf;
+    font-size: 14px;
+    margin-bottom: -2px;
+    font-weight: 500;
+}
